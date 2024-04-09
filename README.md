@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextAuth Basic Application
 
-## Getting Started
+This is a basic Next.js application integrated with NextAuth for authentication purposes. Users can sign up, log in, verify their email addresses, view their profile page to see user data, and log out. The application utilizes MongoDB for database storage, Nodemailer for email verification, Tailwind CSS for styling, and TypeScript for type safety.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Sign up:** Users can create a new account by providing their email address and password.
+- **Login:** Existing users can log in using their email address and password.
+- **Email Verification:** Users receive an email with a verification link upon signing up. They need to verify their email address to access certain features.
+- **Profile Page:** Authenticated users can view their profile page to see their user data.
+- **Logout:** Users can log out of their accounts.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Future Todos
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Restrict Profile Page Access:** Implement functionality to restrict access to the profile page only for verified users.
+- **Reset Password via Email:** Add a feature for users to reset their password via email.
+- **Social Authentication:** Implement social authentication options (e.g., Google, Facebook) for users to sign up/login.
+- **User Dashboard:** Integrate a user dashboard to manage account settings and preferences.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tech Stack
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Next.js
+- NextAuth.js
+- MongoDB
+- Nodemailer
+- Tailwind CSS
+- TypeScript
